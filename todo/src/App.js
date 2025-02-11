@@ -31,20 +31,24 @@ function App() {
   }
 
   const addtodo=()=>{
+    if(userInput === '') return;
     let newobj= {
       title:userInput,
       completed:false
     }
     setTasks([...tasks,newobj]);
+    setUserInput('')
 
   }
 
   const handleUserInput=(value)=>{
     setUserInput(value)
   }
+
   const filterApply=(val)=>{
     setFilter(val)
   }
+
   const filteredTodo = tasks.filter((obj)=>{
     if(filterName === 'completed'){
       return obj.completed
@@ -69,7 +73,7 @@ function App() {
 
   return (
     <div className="App">
-    <TodoList onADD={addtodo} useInp={handleUserInput} />
+    <TodoList onADD={addtodo} userInput={userInput} useInp={handleUserInput} />
 
     <div className="filter">
     <select onChange={(e)=>filterApply(e.target.value)} >
@@ -81,7 +85,7 @@ function App() {
     <div className="container">
       
     {filteredTodo.map((obj,index)=>{
-      return <TodoItem onEdit={()=>handleEdit(index)} id={index} key={index} task={obj} onDelete={()=>handleDelete(index)} onComplete={()=>handleComplete(index)}/>
+      return <TodoItem onEdit={()=>handleEdit(index)} id={index} key={index} task={obj} onDelete={()=>handleDelete(index)} onComplete={()=>handleComplete(index)}   />
     })}
     </div>
     </div>

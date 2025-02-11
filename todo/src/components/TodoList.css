@@ -1,16 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     display: inline-block;
     width: 65rem;
     height: 33rem;
     overflow-x: scroll;
     scrollbar-width: none;
 }
-.TodoItem{
+
+.TodoItem {
     display: inline-block;
     width: 60rem;
     height: 9rem;
@@ -20,18 +22,22 @@
     background-color: #ff944d;
     padding: 2px;
 }
-.TodoList{
+
+.TodoList {
     margin: 5px 0;
 }
-.TodoList input{
+
+.TodoList input {
     margin-left: 5rem;
     box-shadow: 0.8px 1px 3px rgb(151, 151, 151);
 }
-h3{
+
+h3 {
     margin-top: 0.6rem;
     color: black;
 }
-.TodoItem.completed{
+
+.TodoItem.completed {
     display: inline-block;
     width: 60rem;
     height: 9rem;
@@ -40,65 +46,53 @@ h3{
     margin: 1rem 0;
     background-color: #2cfe9c;
 }
-button{
+
+button {
     background-color: #751818;
     color: white;
-    border-radius:10px ;
+    border-radius: 10px;
     margin: 0 5px;
     padding: 5px;
     box-shadow: 2px 3px 7px #811d1d;
     border: none;
 }
 
-
-@media screen and (max-width:480px){
-
-
-
-
-
-  .container{
-
-    width: 90%;
-
-    height: 33rem;
-
-    overflow-x: scroll;
-
-    scrollbar-width: none;
-
-  }
-
-  .TodoItem{
-
-    width: 300px !important;
-
-    height: 9rem;
-
-    box-shadow: 1px 1px 15px rgb(85, 84, 84);
-
-    border-radius: 20px;
-
-    margin: 1rem 0;
-
-    background-color: #ff944d;
-
-    padding: 2px;
-
+.filter select{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 1px 1px 5px rgb(203, 203, 251);
 }
 
-.TodoList input{
 
-  margin: 0 !important;
 
-  margin-bottom: 1rem !important;
-
-  display:inline-block;
-
-    width: 70%;
-
-    box-shadow: 0.8px 1px 3px rgb(151, 151, 151);
-
-}
+@media screen and (max-width:480px) {
+    .container {
+        width: 90%;
+        height: 33rem;
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+    .TodoItem {
+        width: 300px !important;
+        height: 9rem;
+        box-shadow: 1px 1px 15px rgb(85, 84, 84);
+        border-radius: 20px;
+        margin: 1rem 0;
+        background-color: #ff944d;
+        padding: 2px;
+    }
+    .TodoList input {
+        margin: 0 !important;
+        margin-bottom: 1rem !important;
+        display: inline-block;
+        width: 70%;
+        box-shadow: 0.8px 1px 3px rgb(151, 151, 151);
+    }
 
 }
