@@ -61,6 +61,7 @@ function App() {
       if(index === id){
         return {...obj,title:newtitle}
       }
+      return obj;
     })
     setTasks(arr)
   }
