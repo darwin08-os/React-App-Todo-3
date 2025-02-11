@@ -49,3 +49,56 @@ button{
     box-shadow: 2px 3px 7px #811d1d;
     border: none;
 }
+
+
+@media screen and (max-width:480px){
+
+
+
+
+
+  .container{
+
+    width: 90%;
+
+    height: 33rem;
+
+    overflow-x: scroll;
+
+    scrollbar-width: none;
+
+  }
+
+  .TodoItem{
+
+    width: 300px !important;
+
+    height: 9rem;
+
+    box-shadow: 1px 1px 15px rgb(85, 84, 84);
+
+    border-radius: 20px;
+
+    margin: 1rem 0;
+
+    background-color: #ff944d;
+
+    padding: 2px;
+
+}
+
+.TodoList input{
+
+  margin: 0 !important;
+
+  margin-bottom: 1rem !important;
+
+  display:inline-block;
+
+    width: 70%;
+
+    box-shadow: 0.8px 1px 3px rgb(151, 151, 151);
+
+}
+
+}
